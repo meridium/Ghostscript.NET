@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{3AA07E8A-8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghostscript.NET.CommandLine.64", "Ghostscript.NET.CommandLine.64\Ghostscript.NET.CommandLine.64.csproj", "{1B140134-C5FC-4C45-B34A-6BCEE38A5BCC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "releases", "releases", "{0B0C9362-EB97-4745-90CC-A8411229B436}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,5 +113,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0B0C9362-EB97-4745-90CC-A8411229B436} = {3AA07E8A-8E52-4E60-A6BB-A5991B5F829F}
 	EndGlobalSection
 EndGlobal

@@ -12,12 +12,13 @@ This file is part of Ghostscript.NET library (Azure fork)
 ## HISTORY of the Ghostscript.NET library
 
 ### 1.2.2           2016-06-16
-
+[Download v1.2.2](release/Ghostscript.NET.CommandLine.64.v1.2.2.zip)
 - Azure fork first release
 - Ghostscript.NET.CommandLine - Added a command line port for the GhostscriptProcessor. 
   Works in Azure (instead of gswin64c.exe who doesn't)
 - GhostscriptProcessor.DisableOutputProcessing - when you process custom postscripts and
   don't want the processor to trigger any processing events
+
 
 ### 1.2.1.         2015-03-??
 - GhostscriptRasterizer - added a constructor to allow capture of IO using GhostscriptStdIO
