@@ -12,7 +12,7 @@ This file is part of Ghostscript.NET library (Azure fork)
 ## HISTORY of the Ghostscript.NET library
 
 ### 1.2.2           2016-06-16
-[Download v1.2.2](release/Ghostscript.NET.CommandLine.64.v1.2.2.zip)
+[Download v1.2.2](releases/Ghostscript.NET.CommandLine.64.v1.2.2.zip?raw=true)
 - Azure fork first release
 - Ghostscript.NET.CommandLine - Added a command line port for the GhostscriptProcessor. 
   Works in Azure (instead of gswin64c.exe who doesn't)
