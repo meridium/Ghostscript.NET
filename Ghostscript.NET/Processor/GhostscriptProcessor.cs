@@ -449,8 +449,8 @@ namespace Ghostscript.NET.Processor
 
         #region ProcessOutputLine
 
-        private void ProcessOutputLine(string line)
-        {
+        private void ProcessOutputLine(string line) {
+            if (DisableOutputParsing) return;
             if (line.StartsWith("Processing pages"))
             {
                 string[] chunks = line.Split(EMPTY_SPACE_SPLIT);
@@ -493,6 +493,7 @@ namespace Ghostscript.NET.Processor
         }
 
         #endregion
+        public bool DisableOutputParsing { get; set; }
 
     }
 }

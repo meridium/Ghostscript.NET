@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Ghostscript.NET.Samples")]
+[assembly: AssemblyTitle("Ghostscript.NET.CommandLine.64")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Habjan")]
-[assembly: AssemblyProduct("Ghostscript.NET.Samples")]
-[assembly: AssemblyCopyright("Copyright © 2013-2015 Josip Habjan (habjan@gmail.com)")]
+[assembly: AssemblyCompany("Meriworks")]
+[assembly: AssemblyProduct("Ghostscript.NET.CommandLine.64")]
+[assembly: AssemblyCopyright("Copyright © 2016 by Meriworks(dan@meriworks.se). All Rights Reserved.")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a9c22027-b799-4221-b8e0-58a94add72a6")]
+[assembly: Guid("1b140134-c5fc-4c45-b34a-6bcee38a5bcc")]
 
 // Version information for an assembly consists of the following four values:
 //
