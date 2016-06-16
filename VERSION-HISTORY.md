@@ -1,6 +1,6 @@
 ﻿# Version-History
 
-This file is part of Ghostscript.NET library
+This file is part of Ghostscript.NET library (Azure fork)
 
 * Author: Josip Habjan (<mailto:habjan@gmail.com>, <http://www.linkedin.com/in/habjan>) (Ghostscript.NET)
 * Author: Meriworks (<mailto:dan@meriworks.se>, <http://www.meriworks.se>) (Azure fork)
