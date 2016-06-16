@@ -6,6 +6,8 @@ work on Azure Web sites for some reason but this distribution of Ghostscript.NET
 **Ghostscript.NET.CommandLine.64.exe** that works like gswin64c.exe but uses GhostscriptProcessor
 under the hood.
 
+The Azure fork is created and maintained by Meriworks (<mailto:dan@meriworks.se>)
+
 [Version history](VERSION-HISTORY.md)
 
 # Ghostscript.NET

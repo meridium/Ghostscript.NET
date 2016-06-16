@@ -2,18 +2,18 @@
 
 This file is part of Ghostscript.NET library
 
-Author: Josip Habjan (habjan@gmail.com, <http://www.linkedin.com/in/habjan>) 
-
-Development files: <http://ghostscriptnet.codeplex.com>
-
-License: Affero General Public License (AGPL) <http://www.gnu.org/licenses/agpl.html/>
-
-Copyright (c) 2013-2015 by Josip Habjan 
+* Author: Josip Habjan (<mailto:habjan@gmail.com>, <http://www.linkedin.com/in/habjan>) (Ghostscript.NET)
+* Author: Meriworks (<mailto:dan@meriworks.se>, <http://www.meriworks.se>) (Azure fork)
+* Development files: <https://github.com/meridium/ghostscript.net>
+* License: Affero General Public License (AGPL) <http://www.gnu.org/licenses/agpl.html/>
+* Copyright (c) 2013-2015 by Josip Habjan (Ghostscript.NET)
+* Copyright (c) 2016 by Meriworks (Azure fork)
 
 ## HISTORY of the Ghostscript.NET library
 
 ### 1.2.2           2016-06-16
 
+- Azure fork first release
 - Ghostscript.NET.CommandLine - Added a command line port for the GhostscriptProcessor. 
   Works in Azure (instead of gswin64c.exe who doesn't)
 - GhostscriptProcessor.DisableOutputProcessing - when you process custom postscripts and
