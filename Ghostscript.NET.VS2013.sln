@@ -14,7 +14,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{3AA07E8A-8E52-4E60-A6BB-A5991B5F829F}"
 	ProjectSection(SolutionItems) = preProject
 		COPYING = COPYING
-		VERSION-HISTORY = VERSION-HISTORY
+		README.md = README.md
+		VERSION-HISTORY.md = VERSION-HISTORY.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ghostscript.NET.CommandLine.64", "Ghostscript.NET.CommandLine.64\Ghostscript.NET.CommandLine.64.csproj", "{1B140134-C5FC-4C45-B34A-6BCEE38A5BCC}"

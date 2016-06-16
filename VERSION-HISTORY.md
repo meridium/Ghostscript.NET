@@ -1,25 +1,25 @@
-﻿//
-// version-history
-//
-// This file is part of Ghostscript.NET library
-// Author: Josip Habjan (habjan@gmail.com, http://www.linkedin.com/in/habjan) 
-//
-// Development files: http://ghostscriptnet.codeplex.com
-//
-// License: Affero General Public License (AGPL) http://www.gnu.org/licenses/agpl.html
-// 
-// Copyright (c) 2013-2015 by Josip Habjan 
+﻿# Version-History
 
-HISTORY of the Ghostscript.NET library
-1.2.2           2016-06-16
----------------------------
+This file is part of Ghostscript.NET library
+
+Author: Josip Habjan (habjan@gmail.com, <http://www.linkedin.com/in/habjan>) 
+
+Development files: <http://ghostscriptnet.codeplex.com>
+
+License: Affero General Public License (AGPL) <http://www.gnu.org/licenses/agpl.html/>
+
+Copyright (c) 2013-2015 by Josip Habjan 
+
+## HISTORY of the Ghostscript.NET library
+
+### 1.2.2           2016-06-16
+
 - Ghostscript.NET.CommandLine - Added a command line port for the GhostscriptProcessor. 
   Works in Azure (instead of gswin64c.exe who doesn't)
 - GhostscriptProcessor.DisableOutputProcessing - when you process custom postscripts and
   don't want the processor to trigger any processing events
 
-1.2.1.         2015-03-??
--------------------------
+### 1.2.1.         2015-03-??
 - GhostscriptRasterizer - added a constructor to allow capture of IO using GhostscriptStdIO
   (Rasterizer samples updated with example of using GhostscriptStdIO)
 - GhostscriptViewer - added GridFitTT=0 to improve text quality.
@@ -29,8 +29,7 @@ HISTORY of the Ghostscript.NET library
 - GhostscriptViewer - changed ShowAfterOpen to public to set parameters without having 
   to generate a pdf
 
-1.2.0.         2015-02-05
--------------------------
+### 1.2.0.         2015-02-05
 - fixed problem with checking for pdf file header signature in pdf files that has 
   extra bytes at the beginning of the file before the actual signature.
 - fixed problem with the page rasterized to Image object which is kept in memory 
@@ -38,8 +37,7 @@ HISTORY of the Ghostscript.NET library
 - added ability to set custom switches for GhostscriptRasterizer and GhostscriptViewer.
 - added more usage examples.
 
-1.1.9.         2014-07-30
--------------------------
+### 1.1.9.         2014-07-30
 - fixed problem with the PDF invisible layers (the optional content groups which will 
   be left unmarked if process_trailer_attrs is not executed).
 - fixed text rasterization problem for some pdf's, it seems that the 'pdfopen begin' 
@@ -48,16 +46,14 @@ HISTORY of the Ghostscript.NET library
 - changed GhostscriptRasterizer methods to support Stream insted of the MemoryStream.
 - fixed handling files without the extension in GhostscriptViewer and Rasterizer.
 
-1.1.8.         2014-05-08
--------------------------
+### 1.1.8.         2014-05-08
 - fixed incompatibility problem with 'gsapi_set_arg_encoding' function in Ghostscript 
   releases prior to 9.10. (this function was introduced in 9.10 release)
 - fixed older versions incompatibility problem with '-dMaxBitmap=1g' switch bugfix 
   which in some cases turns on text antialiasing for Ghostscript 9.14
 - added better initialization checking
 
-1.1.7.         2014-04-29
--------------------------
+### 1.1.7.         2014-04-29
 - implemented Ghostscript native library verification with a friendly error message 
   that will clear out the confusion when used native Ghostscript library is not 
   compatibile with the running process.
@@ -65,15 +61,13 @@ HISTORY of the Ghostscript.NET library
 - fixed problem with the applying PDF page orientation for the GhostscriptViewer and 
   the GhostscriptRasterizer.
 
-1.1.6.         2014-04-23
--------------------------
+### 1.1.6.         2014-04-23
 - simplified GetInstalledVersions and GetLastInstalledVersion functions
 - fixed problem with the CropBox in the GhostscriptViewer and GhostscripRasterizer.
   (reported by "mahbuburrahman"")
 - license changed to AGPL
 
-1.1.5.         2014-03-20
--------------------------
+### 1.1.5.         2014-03-20
 - fixed the default cropping to the BoundingBox problem for the EPS file format in
   the GhostscriptViewer and GhostscriptRasterizer. (reported by "midora")
 - exposed GhostscriptViewer.EPSClip and GhostscriptRasterizer.EPSClip properties with
@@ -84,8 +78,7 @@ HISTORY of the Ghostscript.NET library
 - all methods that works with MemoryStream are changed to use a generic Stream type.
   (suggested by "midora") 
 
-1.1.4.         2014-02-14
--------------------------
+### 1.1.4.         2014-02-14
 - fixed problem with applying GraphicsAlphaBits and TextAlphaBits which improved
   antialiasing in GhostscriptViewer and GhostscriptRasterizer.
 - fixed problem with output through main stderr callback handler.
@@ -93,8 +86,7 @@ HISTORY of the Ghostscript.NET library
 - added GraphicsAlphaBits and TextAlphaBits properties in GhostscriptViewer and
   GhostscriptRasterizer so antialiasing can now be changed from outside.
 
-1.1.3.         2014-02-05
--------------------------
+### 1.1.3.         2014-02-05
 - added GhostscriptPdfInfo.GetInkCoverage function which has ability to return ink 
   coverage for the CMYK inks, separately for each single page (for RGB colors, it 
   does a silent conversion to CMYK color space internally). This function can be used
@@ -109,8 +101,7 @@ HISTORY of the Ghostscript.NET library
   noticed on the Server 2012 R2 with large amount of memory (thanks to "antonyoni")
 - assembly is now signed with a strong name key (requested by "netmajor")
 
-1.1.2.         2013-12-13
--------------------------
+### 1.1.2.         2013-12-13
 - fixed GhostscriptPipedOutput.Data property get accesor in order to prevent a race 
   condition. (thanks to "Marc Klenotic").
 - added GhostscriptPipedOutput class as part of the Ghostscript.NET library. 
@@ -123,8 +114,7 @@ HISTORY of the Ghostscript.NET library
   before it will be interpreted as PDF language, unlike the PostScript language, 
   inherently requires random access to the file).
 
-1.1.1.         2013-10-09
--------------------------
+### 1.1.1.         2013-10-09
 - fixed problem in the GhostscriptRasterizer and GhostscriptViewer when MediaBox 
   contains negative llx or lly values. (problem reported by "Prasenjit Das").
 - added GhostscriptPngDevice, a friendly output device class with all png devices 
@@ -141,8 +131,7 @@ HISTORY of the Ghostscript.NET library
 - added new samples to the Ghostscript.NET.Samples project (AddWatermarkSample,
   ProcessorSample, DeviceUsageSample).
 
-1.1.0.         2013-10-07
--------------------------
+### 1.1.0.         2013-10-07
 - added GhostscriptViewer state handling (SaveState, RestoreState)
 - GhostscriptRasterizer constructor is extended in order to support usage of the
   existing GhostscriptViewer instance.
@@ -150,8 +139,7 @@ HISTORY of the Ghostscript.NET library
   on 64-bit Windows: It couldn't find a registry key of installed Ghostscript.
   (problem reported and fixed by "r0land".
 
-1.0.9.         2013-09-27
--------------------------
+### 1.0.9.         2013-09-27
 - implemented EPS (Encapsulated PostScript) support for the GhostscriptViewer.
 - added GhostscriptRasterizer class which provides ability to easily export PDF  
   pages, PostScript pages and EPS files to the System.Drawing.Image object in the
@@ -160,8 +148,7 @@ HISTORY of the Ghostscript.NET library
 - added ProgressiveUpdate property to the GhostscriptViewer class so progressive 
   update can be controlled outside the library.
 
-1.0.8.         2013-09-20
--------------------------
+### 1.0.8.         2013-09-20
 - GhostscriptProcessor.Process method name changed to StartProcessing.
 - implemented StopProcessing method in the GhostscriptProcessor class which allows
   us to terminate gsapi_init_with_args call in the multithread environment.
@@ -171,8 +158,7 @@ HISTORY of the Ghostscript.NET library
 - fixed problem in GhostscriptViewer class when trying to view PostScript files 
   without DSC header.
 
-1.0.7.         2013-09-17
--------------------------
+### 1.0.7.         2013-09-17
 - implemented multi-page PostScript support for the GhostscriptViewer.
 - included Microsoft.WinAny.Helper code files in order to have a single dll for the 
   deployment. This will leave Ghostscript.NET library without any extra dependencies.
@@ -182,15 +168,13 @@ HISTORY of the Ghostscript.NET library
   the Ghostscript interpreter.
 - added DisplayPdfSample into the Ghostscript.NET.Samples project.
 
-1.0.6.         2013-09-03
--------------------------
+### 1.0.6.         2013-09-03
 - added zoom-in and zoom-out functionality
 - fixed ImageMemoryHelper.Set24bppRgbImageColor function when stride size is not
   multiple of 3 bytes
 - fixed displayed page size
 
-1.0.5.         2013-09-02
--------------------------
+### 1.0.5.         2013-09-02
 - implemented progressive display update while ghostscript is drawing / rasterizing,
   now a custom update interval can be set in GhostscriptViewer class.
 - fixed problem when using 64-bit ghostscript library where raster (stride) line 
@@ -200,14 +184,12 @@ HISTORY of the Ghostscript.NET library
 - modified Ghostscript.NET.DisplayTest, now it uses GhostscriptViewer class with 
   ability to interpret postscript and display standard input output messages.
 
-1.0.4.         2013-08-30
--------------------------
+### 1.0.4.         2013-08-30
 - fixed display_device callback for 64-bit systems, now this library is compatibile
   with both 32-bit and 64-bit version of Ghostscript interpreter.
 - added GhostscriptViewer Postscript file handler.
 
-1.0.3.         2013-08-28
--------------------------
+### 1.0.3.         2013-08-28
 - fixed GhostscriptInterpreter.Run string limit, strings larger than 64 kb are now 
   supported.
 - added GhostscriptViewer* classes which allows you to render and navigate through 
@@ -215,8 +197,7 @@ HISTORY of the Ghostscript.NET library
 - Ghostscript.NET.Viewer project added to shows how simple GhostscriptViewer class 
   implementation is.
 
-1.0.2.         2013-08-26
--------------------------
+### 1.0.2.         2013-08-26
 - added GhostscriptInterpreter class with StdIO and Display callbacks. This class can
   run postscript from the memory and display raster result from the memory on to the
   screen.
@@ -225,14 +206,12 @@ HISTORY of the Ghostscript.NET library
 - fixed GetInstalledVersion method to search for both GPL and AFPL versions also
   making sure it returns only x86 or x64 ones based on running process.
 
-1.0.1.         2013-08-26
--------------------------
+### 1.0.1.         2013-08-26
 - implementation logic is changed
 - added GhostscriptProcessor class with StdIO which allows you to process the files
   by defining init arguments only with ability to handle Ghostscrtip output messages.
 
 
-1.0.0.         2013-08-22
--------------------------
+### 1.0.0.         2013-08-22
 - initial release, all ghostscript functions are implemented and base wrapper created.
 - ability to run multiple instances of the Ghostscript within a single process.
