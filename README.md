@@ -1,10 +1,13 @@
 # Ghostscript.NET (for Azure fork)
-This fork of [Ghostscript.NET](https://github.com/jhabjan/Ghostscript.NET) is based on v 1.2.0
+This fork of [Ghostscript.NET](https://github.com/jhabjan/Ghostscript.NET) is based on v1.2.1
 and is customized to offer a command line exe that works like gswin64c.exe on Azure Web sites. 
 The ordinary gswin64c.exe that is distributed with the Ghostscript windows distribution does not
 work on Azure Web sites for some reason but this distribution of Ghostscript.NET includes the
 **Ghostscript.NET.CommandLine.64.exe** that works like gswin64c.exe but uses GhostscriptProcessor
 under the hood.
+
+It requires gsdll64.dll from the Ghostscript distribution in the same folder as the 
+Ghostscript.NET.CommandLine.64.exe application.
 
 The Azure fork is created and maintained by Meriworks (<mailto:dan@meriworks.se>)
 
